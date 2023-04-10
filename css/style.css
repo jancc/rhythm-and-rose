@@ -1,0 +1,152 @@
+body, html {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: sans-serif;
+	background: #ffffff;
+	color: #06233c;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto 150% auto;
+	hyphens: auto;
+	text-align: justify;
+}
+
+@media only screen and (min-width: 1400px) {
+	body {
+		grid-template-columns: auto auto;
+		grid-template-rows: auto auto;
+	}
+
+	nav {
+		display: none;
+	}
+}
+
+footer {
+	text-align: center;
+	margin: 32px;
+	font-size: 0.9em;
+}
+
+a {
+	color: #3986c5;
+}
+
+a:hover {
+	color: #59a6e5;
+}
+
+nav {
+	text-align: center;
+	font-size: 32px;
+	background: #0d0d0d;
+	color: #CCDDEC;
+	padding: 16px;
+	grid-column: 1 / -1;
+}
+
+nav a {
+	color: #CCDDEC;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #ECFDFF;
+}
+
+#splash {
+	color: #000000;
+	background-position: 50% 0;
+	background-image: url("/img/splash.webp");
+	background-size: cover;
+	width: 100%;
+	cursor: default;
+}
+
+#splash h1 {
+	text-align: center;
+	padding-top: 16px;
+	font-size: 86px;
+	text-shadow: 1px 1px 1px #CCDDEC;
+}
+
+#splash h2 {
+	color: #ffffff;
+	text-align: center;
+	font-size: 32px;
+	text-shadow: 0px 0px 3px black;
+}
+
+#splash h1, h2 {
+	margin: 0;
+}
+
+#sub {
+	padding-left: 16px;
+	padding-right: 16px;
+	margin: auto;
+	max-width: 800px;
+}
+
+#audioplayer {
+	max-width: 400px;
+	margin: auto;
+	padding: 0;
+	background: rgba(0, 0, 0, 0.75);
+}
+
+#audioplayer audio {
+	width: 100%;
+	padding: 0;
+}
+
+#audioplayer #playlist {
+	margin: 0;
+	padding: 8px;
+	max-height: 200px;
+	overflow-y: scroll;
+	list-style-type: none;
+}
+
+#audioplayer #playlist li {
+	padding: 2px;
+	text-decoration: none;
+	color: #ebebeb;
+	cursor: pointer;
+}
+
+#audioplayer #playlist li:hover {
+	text-decoration: underline;
+	color: #ffffff;
+}
+
+#audioplayer #playlist .active {
+	text-decoration: underline;
+}
+
+#setlist_container {
+	max-width: 400px;
+	margin: auto;
+	padding: 2px;
+	background: rgba(0, 0, 0, 0.75);
+	max-height: 200px;
+	overflow-y: scroll;
+}
+
+#setlist_container ul {
+	margin: 0;
+	padding: 2px;
+	list-style-type: none;
+}
+
+#setlist_container li {
+	padding: 2px;
+	color: #ebebeb;
+	cursor: default;
+}
+

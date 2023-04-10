@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<title>Rhythm and Rose</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
+		<link rel="icon" type="image/png" href="stuff/icon_trans.png">
+		<script>
+			"use strict"
+			let current_element = null
+
+			function playsong(el, song) {
+				el.className = "active"
+				if(current_element) {
+					current_element.className = ""
+				}
+				current_element = el
+
+				const audioplayer = document.getElementById("audioplayer_audio")
+				audioplayer.src = `/songs/${song}`
+				audioplayer.load()
+				audioplayer.play()
+			}
+		</script>
+	</head>
+	<body>
+		<nav>
+			<a href="#teaser">Über uns</a> |
+			<a href="#audio">Reinhören</a> |
+			<a href="#history">Geschichte</a> |
+			<a href="#setlist">Repertoire</a> |
+			<a href="#contact">Kontakt</a>
+		</nav>
+		<div id="splash">
+			<h1>Rhythm and Rose</h1>
+			<h2>Lang lebe Rock'n'Roll!</h2>
+		</div>
+		<div id="sub">
+			<a name="teaser"></a>
+			<h1>Classic Rock Musik</h1>
+			<p>
+
+			Live Musik aus Hannover macht Ihre Classic Rock Party zu einem
+			unvergesslichen Erlebnis. Ob in Clubs, in Kneipen oder auf Ihrer
+			ganz privaten Classic Rock Party kommen Luftgitarrespieler,
+			Headbanger und Rockfans garantiert auf ihre Kosten. Wer abhotten
+			und die Musik von den Rolling Stones, Free aber auch ZZ TOP oder
+			AC/DC noch einmal spüren will, der darf sich die weltweit
+			einzigartige Show von Rhythm and Rose nicht entgehen lassen.
+
+			</p>
+			<p>
+
+			Die Beiden machen ihre Musik garantiert mit Hand, Fuß und Stimme.
+			Die spezielle Anlage benötigt wenig Platz. Die Auftritte von Rhythm
+			and Rose hinterlassen einen bleibenden Eindruck bei jedem Classic
+			Rock Fan und machen Ihre Party zu einem garantierten Erfolg.
+
+			</p>
+
+			<a name="audio"></a>
+			<h1>Reinhören</h1>
+			<div id="audioplayer">
+				<audio id="audioplayer_audio" src="songs/titel_1.mp3" controls></audio>
+				<ul id="playlist">
+					<li onclick="playsong(this, 'no_mercy.mp3')">No Mercy</li>
+					<li onclick="playsong(this, 'polly.mp3')">Polly</li>
+					<li onclick="playsong(this, 'whiskey_in_the_jar.mp3')">Whiskey in the Jar</li>
+				</ul>
+			</div>
+
+			<a name="history"></a>
+			<h1>Geschichte</h1>
+			<p>
+			Das letzte Jahrtausend neigte sich dem Ende zu, als die zwei
+			hannoverschen Musiker Klaus Rose und Thomas Wolff an der Nordsee
+			Urlaub machten. Die Nächte waren lang, das Bier schmeckte gut und
+			der Wind wehte ständig. Auf einmal hatten sie eine Vision: “Wir
+			müssen den Menschen die Zeit zurückbringen. Die Zeit, die nach
+			Freiheit roch und nach Umbruch, die Zeit, in der wir die Welt
+			verändern wollten und die Musik eine ganze Generation vereinte. Die
+			Zeit, in der der Rock`n Roll geboren wurde.“
+			</p>
+			<p>
+			In dieser Nacht wurde der Mond zu einer riesengroßen Bass-Drum, die
+			Sternenbilder, die sie sahen, waren Les Paul und Stratocaster und
+			die ganze Galaxie war ein Meer voller Noten.
+			</p>
+			<p>
+			Als der Tag anbrach, wussten die beiden, dass sie eine Mission zu
+			erfüllen hatten, und sie machten sich so gleich auf den Weg.
+			</p>
+			<p>
+			Es entstand ein Instrumentarium, das sie in die Lage versetzten
+			sollte, zu zweit, ohne verfälschende Klänge von Synthesizer und
+			Computer, ihre Zeitreise anzutreten.
+			</p>
+			<p>
+			Seitdem stehen  Rhythm and Rose auf der Kommandobrücke ihrer
+			Zeitmaschine und fahren durch die unendlichen Weiten der Rock `n
+			Roll Galaxie. Begleitet werden sie dabei von den Rolling Stones, ZZ
+			TOP, Free, Status Quo, Deep Purple, Chuck Berry, Black Sabbath,
+			AC/DC, Metallica, Guns`n Roses, Bryan Adams, und vielen,
+			vielen mehr.
+			</p>
+
+			<a name="setlist"></a>
+			<h1>Repertoire</h1>
+
+			<div id="setlist_container">
+				<ul>
+					<li>Sharp Dressed Man</li>
+					<li>Love is all around</li>
+					<li>With or without you</li>
+					<li>Cocaine</li>
+					<li>20th Century Boy</li>
+					<li>Mighty Quinn</li>
+					<li>Paint it Black</li>
+					<li>Drift Away</li>
+					<li>No Mercy (von Klaus)</li>
+					<li>Turn the Page</li>
+					<li>Tush</li>
+					<li>Whiskey in the jar</li>
+					<li>Sweet Child o’mine</li>
+					<li>Com together</li>
+					<li>Polly</li>
+					<li>Because the night</li>
+					<li>The Unforgiven</li>
+					<li>Here I go again</li>
+					<li>don't cry tonight</li>
+					<li>Cat Scratch Fever</li>
+					<li>Smoke on the water</li>
+					<li>Children of the Revolution</li>
+					<li>Lady in Black</li>
+					<li>Rockin’ all over the World</li>
+					<li>You can’t allways get what you want</li>
+					<li>Loch Lomond</li>
+					<li>Knockin`on Heaven`s Door</li>
+					<li>Halleluja</li>
+					<li>All right now</li>
+					<li>Enter Sandman</li>
+					<li>Cuts like a Knife</li>
+					<li>Billy Jean</li>
+					<li>Touch too much</li>
+					<li>Highway to Hell</li>
+					<li>The River</li>
+					<li>Loosin' my religion</li>
+					<li>My oh my</li>
+					<li>Johnny B</li>
+					<li>La Grand</li>
+					<li>Johnny B. good</li>
+					<li>it's my life</li>
+					<li>No Woman no cry</li>
+					<li>Sympathy for the Devil</li>
+					<li>I shot the sheriff</li>
+					<li>Bad case of Loving You</li>
+				</ul>
+			</div>
+
+			<a name="contact"></a>
+			<h1>Kontakt</h1>
+			<p><b>Thomas Wolff</b><br>
+			Tel.: 0511 - 1319304<br>
+			Mobil.: 01516 - 8163504<br>
+			<a href="mailto:wolff.thomas@gmx.de">wolff.thomas@gmx.de</a>
+			</p>
+
+			<footer>
+				<a href="/impressum.html">Impressum</a>
+			</footer>
+		</div>
+	</body>
+</html>
