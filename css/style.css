@@ -62,7 +62,7 @@ nav a:hover {
 #splash {
 	color: #000000;
 	background-position: 50% 0;
-	background-image: url("/img/splash.webp");
+	background-image: url("img/splash.webp");
 	background-size: cover;
 	width: 100%;
 	cursor: default;
